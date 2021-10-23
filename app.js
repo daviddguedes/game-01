@@ -1,5 +1,4 @@
 (function () {
-
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
     const cWidth = ctx.canvas.width = 1200;
@@ -20,16 +19,6 @@
         this.moving = false;
         this.render = function () {
             ctx.fillStyle = 'orange';
-            // if(rightPressed) {
-            //     if ((this.x + pVelocity) < (cWidth / 2)) {
-            //         this.x += pVelocity;
-            //     }
-            // }
-            // else if(leftPressed) {
-            //     if ((this.x - pVelocity) > 150 ) {
-            //         this.x -= pVelocity;
-            //     }
-            // }
             ctx.fillRect(this.x, this.y, this.w, this.h);
         }
     }
@@ -90,5 +79,4 @@
     document.addEventListener('keyup', keyUpHandler, false);
 
     setInterval(animate, 10);
-
 })();
