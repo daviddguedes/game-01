@@ -14,8 +14,8 @@
     let pVelocity = 8;
 
     function Player() {
-        this.x = 150;
-        this.y = 490;
+        this.x = 50;
+        this.y = 500;
         this.w = 50;
         this.h = 50;
         this.velocity = 0.15;
