@@ -71,6 +71,10 @@
         player.render();
 
         ctx.restore();
+
+        window.requestAnimationFrame(() => {
+            animate();
+        });
     }
 
     function keyDownHandler(event) {
@@ -92,5 +96,5 @@
     document.addEventListener('keydown', keyDownHandler, false);
     document.addEventListener('keyup', keyUpHandler, false);
 
-    setInterval(animate, 10);
+    animate();
 })();
