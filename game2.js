@@ -99,13 +99,10 @@
     const background = new Background();
 
     function animate() {
-        ctx.save();
         ctx.clearRect(0, 0, cWidth, cHeight);
 
         background.render();
         player.render();
-
-        ctx.restore();
 
         window.requestAnimationFrame(() => {
             animate();
